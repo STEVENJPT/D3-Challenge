@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="">
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+    
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <center><h1>Data tool for analyzing health conditions based on demographics</h1></center>
+        <center><i>Data from U.S. Census Bureau and the Behavioral Risk Factor Surveillance</i></center>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-xs-12  col-md-6">
+        <div id="scatter">
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+   <h3>Preliminary observations:</h3> 
+  <ul>
+ <li>The correlation between a state's median income and the share of smokers, obese, and those lacking healthcare is generally negative</li>
+ <li>Roughly, as age increases, the share of people lacking healthcare decreases, less so the rate of obese; no correlation with smoking </li>
+ <li>Finally, its is generally the case that the higher the poverty rate, the higher the rates of obesity, and of those lacking healthcare or smoking</li>
+  </ul>
+
+  </div>
+
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
